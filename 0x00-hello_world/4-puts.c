@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- *Main - Comment
- *Betty Style
+ *main - Entry point
+ *Return: Always 0 (Success)
  */
 int main () {
 
