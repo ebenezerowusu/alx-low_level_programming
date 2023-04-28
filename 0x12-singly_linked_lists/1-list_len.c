@@ -2,9 +2,9 @@
 #include <stdio.h>
 #include "lists.h"
 /**
- * list_len - returns then number of elements in a list.
+ * list_len - returns then no. of size_t in a list.
  * @h: head pointer
- * Return: number of size_t
+ * Return: no. size_t
  */
 
 size_t list_len(const list_t *h)
