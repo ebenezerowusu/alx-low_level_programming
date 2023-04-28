@@ -10,13 +10,15 @@
  */
 int main(void)
 {
-	size_t n;
+	
 	list_t hello = {"World", 5, NULL};
 	list_t *head;
 	list_t *new;
+	size_t n;
 	
-	new = malloc(sizeof(list_t));
 	head = &hello;
+	new = malloc(sizeof(list_t));
+	
 	if (new == NULL)
 	{
 		printf("Error\n");
