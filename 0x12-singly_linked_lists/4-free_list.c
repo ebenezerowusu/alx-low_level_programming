@@ -1,3 +1,4 @@
+#include <stdlib.h>
 #include "lists.h"
 
 /**
@@ -9,6 +10,7 @@
 void free_list(list_t *head)
 {
 	list_t *value;
+	list_t *current;
 
 	while (head)
 	{
