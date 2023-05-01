@@ -1,7 +1,7 @@
+#include "lists.h"
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
-#include "lists.h"
 /*
  * print_listint - prints all the elements of the list
  * @h: head of the list
