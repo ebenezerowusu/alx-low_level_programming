@@ -4,26 +4,21 @@
 #include <stdio.h>
 
 /**
- * pop_listint - deletes the head node
- * @head : pointer to the head of the linked list
- * Return: head node's data (n) of the first node
- *    
+ * pop_listint - deletes the first node
+ * @head: is a double pointer to the first node
+ * Return: the (n) data of the first node or null if list is empty'
  */
 
 int pop_listint(listint_t **head)
 {
 	int value;
 	listint_t *temp;
-	
-	temp = *head;
-	
-	if (temp == NULL)
-		return (0);
 
-	*head = temp->next;
-	value = temp->value;
-	free(temp);
-
+	if (*head == NULL)
+		return (NULL);
+	value = (*head)->n;
+	temp = (*head)->next;
+	free(*head);
+	*head = temp;
 	return (value);
 }
-
