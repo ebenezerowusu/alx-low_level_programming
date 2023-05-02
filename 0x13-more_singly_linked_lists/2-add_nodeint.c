@@ -10,6 +10,7 @@
  *
  * Return: the memory address of the new node
  */
+
 listint_t *add_nodeint(listint_t **head, const int n)
 {
 	listint_t *value;
@@ -20,7 +21,7 @@ listint_t *add_nodeint(listint_t **head, const int n)
 		return (NULL);
 
 	value->n = n;
-	valuee->next = *head;
+	value->next = *head;
 	*head = value;
 
 	return (*head);
